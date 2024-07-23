@@ -9,16 +9,18 @@ import UIKit
 
 final class ViewController: UIViewController {
     
+    // MARK: IB Outlets
     @IBOutlet private var colorView: UIView!
     
     @IBOutlet private var redValueLabel: UILabel!
     @IBOutlet private var greenValueLabel: UILabel!
     @IBOutlet private var blueValueLabel: UILabel!
     
-    @IBOutlet var redSlider: UISlider!
-    @IBOutlet var greenSlider: UISlider!
-    @IBOutlet var blueSlider: UISlider!
+    @IBOutlet private var redSlider: UISlider!
+    @IBOutlet private var greenSlider: UISlider!
+    @IBOutlet private var blueSlider: UISlider!
     
+    // MARK: View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,9 +32,8 @@ final class ViewController: UIViewController {
         blueValueLabel.text = String(format: "%.2f", blueSlider.value)
     }
     
-    
-    @IBAction func updateColor(_ sender: UISlider) {
-        
+    // MARK: IBAction
+    @IBAction private func updateColor(_ sender: UISlider) {
         switch sender {
         case redSlider:
             redValueLabel.text = String(format: "%.2f", redSlider.value)
@@ -45,6 +46,7 @@ final class ViewController: UIViewController {
         setColor()
     }
     
+    //MARK: Private Method
     private func setColor() {
         colorView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
