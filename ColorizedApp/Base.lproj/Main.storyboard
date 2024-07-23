@@ -85,20 +85,20 @@
                                                 <rect key="frame" x="-2" y="0.0" width="276" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                 <connections>
-                                                    <action selector="updateColor" destination="BYZ-38-t0r" eventType="valueChanged" id="vgH-f7-TWm"/>
+                                                    <action selector="updateColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="LPk-ca-KvM"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.20000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ADz-7S-gNe">
                                                 <rect key="frame" x="-2" y="50" width="276" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                 <connections>
-                                                    <action selector="updateColor" destination="BYZ-38-t0r" eventType="valueChanged" id="Gp0-PS-lS9"/>
+                                                    <action selector="updateColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="Z0H-4j-41e"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.80000000000000004" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LFY-9A-vZv">
                                                 <rect key="frame" x="-2" y="100" width="276" height="31"/>
                                                 <connections>
-                                                    <action selector="updateColor" destination="BYZ-38-t0r" eventType="valueChanged" id="j9k-VD-wE7"/>
+                                                    <action selector="updateColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="u0F-hf-YML"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
