@@ -27,20 +27,20 @@ final class ViewController: UIViewController {
         colorView.layer.cornerRadius = 20
         setColor()
         
-        redValueLabel.text = String(format: "%.2f", redSlider.value)
-        greenValueLabel.text = String(format: "%.2f", greenSlider.value)
-        blueValueLabel.text = String(format: "%.2f", blueSlider.value)
+        redValueLabel.text = string(from: redSlider)
+        greenValueLabel.text = string(from: greenSlider)
+        blueValueLabel.text = string(from: blueSlider)
     }
     
     // MARK: IBAction
     @IBAction private func updateColor(_ sender: UISlider) {
         switch sender {
         case redSlider:
-            redValueLabel.text = String(format: "%.2f", redSlider.value)
+            redValueLabel.text = string(from: redSlider)
         case greenSlider:
-            greenValueLabel.text = String(format: "%.2f", greenSlider.value)
+            greenValueLabel.text = string(from: greenSlider)
         default:
-            blueValueLabel.text = String(format: "%.2f", blueSlider.value)
+            blueValueLabel.text = string(from: blueSlider)
         }
         
         setColor()
@@ -54,6 +54,10 @@ final class ViewController: UIViewController {
             blue: CGFloat(blueSlider.value),
             alpha: 1
         )
+    }
+    
+    private func string(from slider: UISlider) -> String {
+        String(format: "%.2f", slider.value)
     }
 }
 
